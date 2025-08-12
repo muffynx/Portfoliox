@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natdanai Pakpoom - Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-mode">
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">หน้าแรก</a></li>
+          <li><a href="#about">เกี่ยวกับ</a></li>
+          <li><a href="#projects">ประสบการณ์</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+      <div class="menu-toggle">
+        <button id="menu-toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>สวัสดี, ผมคือ <span>Natdanai Pakpoom</span></h2>
+          <h3>Network Engineer</h3>
+          <p>ผู้มีใจรักโครงสร้างเครือข่าย การแก้ไขปัญหา และความปลอดภัย</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">ดูผลงาน</a>
+            <a href="#contact" class="btn btn-outline">ติดต่อ</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/muffynx" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muffyn/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/profile.png" alt="Natdanai Pakpoom">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">เกี่ยวกับฉัน</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>ผู้ลงใหลในโครงสร้างพื้นฐานเครือข่าย การแก้ไขปัญหา และความปลอดภัย</p>
+            <p>เชี่ยวชาญในการกำหนดค่าอุปกรณ์ การใช้งานโปรโตคอลการกำหนดเส้นทาง การเพิ่มประสิทธิภาพเครือข่าย
+              และการรับรองความปลอดภัยของเครือข่าย</p>
+            <div class="about-info">
+              <div class="info-item">
+                <h4>ประสบการณ์:</h4>
+                <p>3+ เดือน</p>
+              </div>
+              <div class="info-item">
+                <h4>งานปัจจุบัน:</h4>
+                <p>นักศึกษา</p>
+              </div>
+              <div class="info-item">
+                <h4>การศึกษา:</h4>
+                <p>วิทยาการคอมพิวเตอร์</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">ประสบการณ์ออกหน้างาน</h2>
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+          <button class="filter-btn" data-filter="CISCO">CISCO</button>
+          <button class="filter-btn" data-filter="FORTINET">FORTINET</button>
+          <button class="filter-btn" data-filter="other">อื่นๆ</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card 1 -->
+          <div class="project-card"
+            
+            data-category="CISCO"
+            data-title="เปลี่ยนเป็น Switch L2 Cisco 2960G"
+            data-location="บริษัท Toshiba บางกะดี"
+            data-problem="พบ Error บน Port Trunk ที่เชื่อมต่อกับ Switch ตัวอื่น การตั้งค่า etherchannel / port-channel ไม่ตรงกันกับ Switch ตัวอื่น"
+
+            data-solution="ยกเลิกการตั้งค่า etherchannel บน Switch ตัวนี้ และใช้ Port เดียวในการเชื่อมต่อกับ Switch ตัวอื่น"
+            data-image="images/1/1.png"
+            data-extra="images/1/2.png,images/1/1.png,images/1/3.png">
+            <div class="project-img">
+              <img src="images/1/1.png" alt="Cisco 2960G">
+            </div>
+            <div class="project-content">
+              <h3>เปลี่ยนเป็น Switch L2 Cisco 2960G</h3>
+              <p>Switch Dell ตัวเดิมใช้งานมานาน เกิดอาการเสีย</p>
+               <div class="project-tags">
+                <span>CISCO</span>
+                <span>SWITCH L2</span>
+                <span>2960G</span>
+              </div>
+              <!-- <div class="project-links">
+                <a href="https://github.com/goragodwiriya/kotchasan" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://kotchasan.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+
+
+          
+          <div class="project-card"
+            
+            data-category="FORTINET"
+            data-title="เปลี่ยน FIREWALL FortiGate 200D "
+            data-location="บริษัท เบสท์เทค แอนด์ เอ็นจิเนียริ่ง จำกัด (สาขาสัตหีบ)"
+            data-problem="เครื่องในวงไม่สามารถ Ping หาเครื่องปริ้นได้ และตรวจสอบพบว่า เครื่องปริ้นเชื่อมต่อกับ DMZ Interface ซึ่งปกติเป็นการใช้ออกอินเตอร์เน็ต สังเกตจากการตั้งค่า Firewall เดิมที่มีการตั้งค่า Firewall Policy แบบ allow all ระหว่าง DMZ กับ LAN จึงทำให้เครื่องปริ้นสามารถ Ping หาเครื่องในวงได้"
+            data-solution="เพิ่ม static route ระหว่าง DMZ กับ LAN ให้่เฉพาะเจาะจงมากขึ้น และตั้งค่า Firewall Policy ให้เหมาะสมกับการใช้งาน"
+            data-image="images/2/1.png"
+            data-extra="images/2/2.png,images/2/1.png,images/2/3.png">
+            <div class="project-img">
+              <img src="images/2/1.png" alt="FortiGate 120G">
+            </div>
+            <div class="project-content">
+              <h3>เปลี่ยน FIREWALL FortiGate 200D</h3>
+              <p>อัพเกรดรุ่นใหม่เป็น FortiGate 120G </p>
+               <div class="project-tags">
+                <span>FORTINET</span>
+                <span>200D</span>
+                <span>120G</span>
+              </div>
+              <!-- <div class="project-links">
+                <a href="https://github.com/goragodwiriya/kotchasan" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://kotchasan.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="project-card"
+            
+            data-category="other"
+            data-title="ติด Label บนสาย LAN ตามจำนวน Patch Panel"
+            data-location="มหาวิทยาลัยศิลปากร วิทยาเขตเมืองทองธานี"
+            data-problem="สาย LAN กับ Patch Panal และ Switch ไม่เป็นตามลำดับ เช่น ตำแหน่งช่อง 1-5 เรียงปกติ แต่กลับมีตำแหน่ง 8-10 อยู่ในช่อง  "
+            data-solution="ทำการตรวจสอบสาย LAN และ Patch Panel ให้ตรงกัน และติด Label บนสาย LAN ตามจำนวน Patch Panel เพื่อให้สามารถระบุได้ง่ายขึ้น"
+            data-image="images/4/1.png"
+            data-extra="images/4/2.png,images/4/1.png,images/4/3.png">
+            <div class="project-img">
+              <img src="images/4/1.png" alt="other">
+            </div>
+            <div class="project-content">
+              <h3>ติด Label บนสาย LAN ตามจำนวน Patch Panel</h3>
+              <p>ติดPatch Panel ตามSwitch 8 ตัว </p>
+               <div class="project-tags">
+                <span>UTP</span>
+                <span>Patch Panal</span>
+              
+              </div>
+              <!-- <div class="project-links">
+                <a href="https://github.com/goragodwiriya/kotchasan" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://kotchasan.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="project-card"
+            
+            data-category="other"
+            data-title="PM(Preventive Maintenance)"
+            data-location="บริษัท คิว-คอน อีสเทอร์น จำกัด"
+            
+            data-solution="Backup Configuration ของ Switch 5 ตัว เก็บ log การทำงาน ทำความสะอาดอุปกรณ์ Switch 5 ตามจุดต่างๆ"
+            data-image="images/3/1.png"
+            data-extra="images/3/1.png">
+            <div class="project-img">
+              <img src="images/3/1.png" alt="other">
+            </div>
+            <div class="project-content">
+              <h3>PM(Preventive Maintenance)</h3>
+              <p>Backup Configuration ของ Switch 5 ตัว </p>
+               <div class="project-tags">
+                <span>FORTINET</span>
+                <span>200D</span>
+                <span>120G</span>
+              </div>
+              <!-- <div class="project-links">
+                <a href="https://github.com/goragodwiriya/kotchasan" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://kotchasan.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+
+          
+          <div class="project-card"
+            
+            data-category="other"
+            data-title="Lab Network"
+            data-location="-"
+        
+           
+            
+            data-solution="สร้าง Lab Network เพื่อทดสอบการทำงานของอุปกรณ์และโปรโตคอลต่างๆ สร้าง VLAN L2 และ Routing L3 บน Cisco 3560 และ 2960X เชื่อมต่อ Firewall fortiGate 60C ให้เป็น Gateway ลง Winserver ทำ DHCP และ DNS ให้กับเครื่องในวง LAN ทำ LDAP,Radius ก่อนทำการ LOGIN ใช้ Internet"
+            data-image="images/5/1.png"
+            data-extra="images/5/3.png,images/5/1.png,images/5/4.png,images/5/5.png,images/5/2.png">
+            <div class="project-img">
+              <img src="images/5/1.png" alt="other">
+            </div>
+            <div class="project-content">
+              <h3>สร้าง Lab Network เพื่อทดสอบการทำงานของอุปกรณ์และโปรโตคอลต่างๆ</h3>
+              <p>ทำอุปกรณ์ทุกตัวให้สามารถสื่อสารกันได้ ด้วย PING </p>
+               <div class="project-tags">
+                <span>CISCO</span>
+                <span>3560</span>
+                <span>2960X</span>
+              </div>
+              <!-- <div class="project-links">
+                <a href="https://github.com/goragodwiriya/kotchasan" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://kotchasan.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">ติดต่อฉัน</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-text">
+                <h3>อีเมล</h3>
+                <p>natdanai.pakp@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">ชื่อ</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">หัวข้อ</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">ข้อความ</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+         <div class="footer-bottom">
+        <p>&copy; 2025 Natdanai Pakpoom. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img id="modalImage" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <div id="modalDetails">
+        <p><i class="fas fa-map-marker-alt"></i> <span id="modalLocation"></span></p>
+        <p><i class="fas fa-exclamation-triangle"></i> <span id="modalProblem"></span></p>
+        <p><i class="fas fa-tools"></i> <span id="modalSolution"></span></p>
+      </div>
+      <p id="modalDescription"></p>
+      <div id="modalExtraImages" class="extra-images"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
